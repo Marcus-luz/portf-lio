@@ -325,3 +325,86 @@ body {
         font-size: 2rem;
     }
 }
+
+/* ================= SEÇÃO DE CONTATO ================= */
+.contato-desc {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.contato-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.contato-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.contato-card i {
+    font-size: 2.5rem;
+    color: #00e676; /* Seu verde padrão */
+    margin-bottom: 15px;
+}
+
+.contato-card h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.contato-card p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.contato-card:hover {
+    transform: translateY(-8px);
+    border-color: #00e676;
+    box-shadow: 0 8px 20px rgba(0, 230, 118, 0.15);
+}
+
+/* ================= RODAPÉ FINAL ================= */
+.footer-final {
+    padding: 40px 0;
+    background: #1a1a1a;
+    color: #aaa;
+    text-align: center;
+}
+
+.footer-final p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.footer-final i.fa-code {
+    color: #00e676;
+}
+
+.footer-social-mini {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-social-mini a {
+    color: #888;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.footer-social-mini a:hover {
+    color: #00e676;
+}
