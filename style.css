@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.icon-logo {
+    color: #00e676; /* Verde similar ao da imagem */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+/* Área Principal (Hero) */
+.hero {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.saudacao {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.nome {
+    font-size: 4rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.cargo {
+    font-size: 3rem;
+    color: #34495e;
+    font-weight: normal;
+}
+
+/* Animação do cursor piscando */
+.cursor {
+    display: inline-block;
+    color: #34495e;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* ================= ESTRUTURA DAS SEÇÕES ================= */
+.section {
+    padding: 80px 20px;
+    width: 100%;
+}
+
+.bg-light {
+    background-color: #f8f9fa; /* Fundo cinza claro para Projetos */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Novo Título com Cursor Verde */
+.section-title {
+    font-size: 2rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+.title-cursor {
+    color: #00e676;
+    animation: blink 1s infinite;
+}
+
+/* ================= SEÇÃO SOBRE (Layout Imagem e Texto) ================= */
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Imagem e círculo verde de fundo */
+.sobre-img-wrapper {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+}
+
+.circle-bg {
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    width: 250px;
+    height: 250px;
+    background-color: #00e676;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.sobre-pic {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1;
+    background-color: #eee;
+}
+
+/* Texto Sobre */
+.sobre-text {
+    flex: 1;
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+}
+
+.sobre-text p {
+    margin-bottom: 15px;
+}
+
+/* Sublinhado Verde nas palavras */
+.highlight {
+    font-weight: 700;
+    color: #2c3e50;
+    border-bottom: 3px solid #00e676;
+    padding-bottom: 1px;
+}
+
+/* Ícones das tecnologias embaixo */
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 60px;
+    font-size: 3.5rem;
+    color: #333;
+}
+
+.tech-icons i {
+    transition: color 0.3s, transform 0.3s;
+}
+
+.tech-icons i:hover {
+    color: #00e676;
+    transform: translateY(-5px);
+}
+
+/* ================= SEÇÃO PROJETOS (CARDS) ================= */
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.projeto-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+/* Imagem do Projeto */
+.projeto-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: #2c3e50; /* Cor de fundo caso falte a imagem */
+}
+
+.projeto-content {
+    padding: 30px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.projeto-content h3 {
+    color: #222;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.projeto-content p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    flex: 1;
+}
+
+/* Tags com Fundo Verde */
+.projeto-techs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.projeto-techs span {
+    background-color: #00e676;
+    color: #fff;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Links (Code / Prévia) */
+.projeto-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.projeto-links a {
+    color: #444;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+}
+
+.projeto-links a:hover {
+    color: #00e676;
+}
+
+/* Rodapé / Ícones Sociais */
+.social-footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.social-footer a {
+    color: #333;
+    font-size: 1.8rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-footer a:hover {
+    transform: translateY(-3px);
+    color: #00e676;
+}
+
+/* Responsividade (Celular) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    .nome {
+        font-size: 2.8rem;
+    }
+    .cargo {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus Vinicius | Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="icon-logo">▶</span> MARCUS VINICIUS 
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main class="hero" id="home">
+        <div class="hero-content">
+            <p class="saudacao">Olá, eu sou o...</p>
+            <h1 class="nome">Marcus Vinicius da Luz Araújo</h1>
+            <h2 class="cargo"><span id="typing-text"></span><span class="cursor">|</span></h2>
+        </div>
+    </main>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre <span class="title-cursor">|</span></h2>
+            
+            <div class="sobre-container">
+                <div class="sobre-img-wrapper">
+                    <div class="circle-bg"></div>
+                    <img src="./imagens/Minha-FOTO.png" alt="Marcus Vinicius" class="sobre-pic">
+                </div>
+                
+                <div class="sobre-text">
+                    <p>
+                        Sou graduando em <span class="highlight">Engenharia de Software</span> pela Unipampa e atuo na construção de ecossistemas escaláveis e seguros.
+                    </p>
+                    <p>
+                        Minha base técnica une a robustez do <span class="highlight">Backend (Python, Java)</span> e a dinamicidade do <span class="highlight">Frontend (React, Vue.js)</span>, apoiada por uma forte cultura de <span class="highlight">Qualidade de Software (QA)</span>.
+                    </p>
+                    <p>
+                        Desenvolvo pipelines de ETL com Pandas, integro APIs resilientes e aplico padrões arquiteturais avançados, como <span class="highlight">Arquitetura Hexagonal</span> e <span class="highlight">Medallion Architecture</span>. Acredito que um bom produto digital deve ser rápido na tela, seguro no banco de dados e protegido por baterias de testes automatizados com <span class="highlight">Pytest e Selenium</span>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="tech-icons">
+                <i class="fa-brands fa-python" title="Python"></i>
+                <i class="fa-brands fa-java" title="Java"></i>
+                <i class="fa-brands fa-js" title="JavaScript"></i>
+                <i class="fa-brands fa-react" title="React"></i>
+                <i class="fa-brands fa-vuejs" title="Vue.js"></i>
+                <i class="fa-solid fa-database" title="SQL / Banco de Dados"></i>
+                <i class="fa-brands fa-git-alt" title="Git"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Projetos <span class="title-cursor">|</span></h2>
+            
+            <div class="projetos-grid">
+                
+                <div class="projeto-card">
+                    <img src="./imagens/Care.png" alt="Intuitive Care" class="projeto-img">
+                    <div class="projeto-content">
+                        <h3>Plataforma de Dados - Intuitive Care</h3>
+                        <p>Solução end-to-end com Web Crawler, pipeline ETL para sanitização de dados da ANS e dashboard reativo para análise financeira.</p>
+                        <div class="projeto-techs">
+                            <span>Python</span><span>FastAPI</span><span>Vue.js</span><span>Pandas</span><span>MySQL</span>
+                        </div>
+                        <div class="projeto-links">
+                            <a href="https://github.com/Marcus-luz/intuitive-care-Test" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <img src="./imagens/seac.png" alt="Dashboard BRISA" class="projeto-img">
+                    <div class="projeto-content">
+                        <h3>Dashboard Financeiro SEAC (BRISA)</h3>
+                        <p>Sistema de fluxo de caixa agrícola focado em alta confiabilidade de dados e componentes reutilizáveis integrados via APIs REST.</p>
+                        <div class="projeto-techs">
+                            <span>React</span><span>TypeScript</span><span>Supabase</span><span>Pytest</span>
+                        </div>
+                        <div class="projeto-links">
+                            <a href="https://github.com/Marcus-luz/Cash_flow" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <img src="./imagens/Painel_saude.jpg" alt="PET Saúde" class="projeto-img">
+                    <div class="projeto-content">
+                        <h3>Dashboard Saúde Pública (PET Saúde)</h3>
+                        <p>Plataforma modular para centralizar e dar transparência aos indicadores de saúde locais, com autenticação RBAC e integração OAuth.</p>
+                        <div class="projeto-techs">
+                            <span>Flask</span><span>Arq. Hexagonal</span><span>Medallion</span>
+                        </div>
+                        <div class="projeto-links">
+                            <a href="#" style="color: #999; cursor: not-allowed;"><i class="fa-solid fa-lock"></i> Privado</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <img src="./imagens/dnc.png" alt="Landing Page DNC" class="projeto-img">
+                    <div class="projeto-content">
+                        <h3>Landing Page Tech (Escola DNC)</h3>
+                        <p>Interface responsiva mobile-first com funcionalidades de captura de leads e validação de dados no lado do cliente.</p>
+                        <div class="projeto-techs">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <div class="projeto-links">
+                            <a href="https://github.com/Marcus-luz/projeto-Landing-Page" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                            <a href="https://marcus-luz.github.io/projeto-Landing-Page/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Prévia</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <img src="./imagens/AI-Product-Owner.png" alt="AI Product Backlog Generator" class="projeto-img">
+                    <div class="projeto-content">
+                        <h3>AI Product Backlog Generator</h3>
+                        <p>Plataforma inteligente que utiliza IA (LLMs) para automatizar a geração de backlogs de produtos, épicos, requisitos e histórias de usuário.</p>
+                        <div class="projeto-techs">
+                            <span>Python</span><span>Flask</span><span>LLMs / IA</span><span>SQLAlchemy</span><span>JS</span>
+                        </div>
+                        <div class="projeto-links">
+                            <a href="https://github.com/Marcus-luz/ai-product-backlog-generator" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="social-footer" id="contato">
+        <a href="https://github.com/Marcus-luz" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/marcuslara%C3%BAjo/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:marcusvyni3@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
