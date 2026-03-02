@@ -15,6 +15,7 @@
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
@@ -50,25 +51,64 @@
                     </p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="tech-icons">
-                <i class="fa-brands fa-python" title="Python"></i>
-                <i class="fa-brands fa-java" title="Java"></i>
-                <i class="fa-brands fa-js" title="JavaScript"></i>
-                <i class="fa-brands fa-react" title="React"></i>
-                <i class="fa-brands fa-vuejs" title="Vue.js"></i>
-                <i class="fa-solid fa-database" title="SQL / Banco de Dados"></i>
-                <i class="fa-brands fa-git-alt" title="Git"></i>
+    <section id="habilidades" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Habilidades & Tecnologias <span class="title-cursor">|</span></h2>
+            
+            <div class="habilidades-grid">
+                <div class="habilidade-card">
+                    <h3><i class="fa-solid fa-code"></i> Linguagens</h3>
+                    <div class="habilidade-tags">
+                        <span>Python</span><span>JavaScript</span><span>TypeScript</span><span>SQL</span><span>Java</span><span>PHP</span>
+                    </div>
+                </div>
+
+                <div class="habilidade-card">
+                    <h3><i class="fa-solid fa-server"></i> Back-end & Arquitetura</h3>
+                    <div class="habilidade-tags">
+                        <span>Flask</span><span>FastAPI</span><span>APIs REST</span><span>Arq. Hexagonal</span><span>RBAC</span><span>OAuth</span>
+                    </div>
+                </div>
+
+                <div class="habilidade-card">
+                    <h3><i class="fa-solid fa-laptop-code"></i> Front-end</h3>
+                    <div class="habilidade-tags">
+                        <span>React</span><span>Vue.js</span><span>HTML</span><span>CSS</span><span>Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <div class="habilidade-card">
+                    <h3><i class="fa-solid fa-database"></i> Dados & Engenharia</h3>
+                    <div class="habilidade-tags">
+                        <span>MySQL</span><span>PostgreSQL (Supabase)</span><span>Pandas (ETL)</span><span>Arq. Medallion</span><span>SQL Analítico</span>
+                    </div>
+                </div>
+
+                <div class="habilidade-card">
+                    <h3><i class="fa-solid fa-vial-circle-check"></i> Qualidade & Testes (QA)</h3>
+                    <div class="habilidade-tags">
+                        <span>Cypress</span><span>BDD (Cucumber/Gherkin)</span><span>Locust</span><span>Pytest</span><span>Unittest</span><span>Selenium</span><span>Postman</span>
+                    </div>
+                </div>
+
+                <div class="habilidade-card">
+                    <h3><i class="fa-solid fa-toolbox"></i> Ferramentas & Gestão</h3>
+                    <div class="habilidade-tags">
+                        <span>Git (GitHub/GitLab)</span><span>Scrum</span><span>Kanban</span><span>Modelagem UML</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="projetos" class="section bg-light">
+    <section id="projetos" class="section">
         <div class="container">
-            <h2 class="section-title">Projetos <span class="title-cursor">|</span></h2>
+            <h2 class="section-title">Projetos Concluídos <span class="title-cursor">|</span></h2>
             
             <div class="projetos-grid">
-                
                 <div class="projeto-card">
                     <img src="./imagens/Care.png" alt="Intuitive Care" class="projeto-img">
                     <div class="projeto-content">
@@ -93,20 +133,6 @@
                         </div>
                         <div class="projeto-links">
                             <a href="https://github.com/Marcus-luz/Cash_flow" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projeto-card">
-                    <img src="./imagens/Painel_saude.jpg" alt="PET Saúde" class="projeto-img">
-                    <div class="projeto-content">
-                        <h3>Dashboard Saúde Pública (PET Saúde)</h3>
-                        <p>Plataforma modular para centralizar e dar transparência aos indicadores de saúde locais, com autenticação RBAC e integração OAuth.</p>
-                        <div class="projeto-techs">
-                            <span>Flask</span><span>Arq. Hexagonal</span><span>Medallion</span>
-                        </div>
-                        <div class="projeto-links">
-                            <a href="#" style="color: #999; cursor: not-allowed;"><i class="fa-solid fa-lock"></i> Privado</a>
                         </div>
                     </div>
                 </div>
@@ -144,6 +170,38 @@
                        </div>
                  </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+   <section id="projetos-dev" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Projeto em Desenvolvimento <span class="title-cursor">|</span></h2>
+            
+            <div class="projeto-destaque-split">
+                
+                <div class="destaque-img-box">
+                    <img src="./imagens/pet_saude.jpg" alt="Dashboard PET Saúde">
+                </div>
+                
+                <div class="destaque-content-box">
+                    <h3 class="destaque-titulo">Dashboard Saúde Pública (PET Saúde)</h3>
+                    
+                    <p class="destaque-desc">
+                        Plataforma modular para centralizar e dar transparência aos indicadores de saúde locais, com autenticação RBAC e integração OAuth.
+                    </p>
+                    
+                    <div class="destaque-techs">
+                        <span>Flask</span><span>Arq. Hexagonal</span><span>Medallion</span>
+                    </div>
+
+                    <div class="destaque-info-privado">
+                        <h4><i class="fa-solid fa-lock"></i> Por que o repositório é privado?</h4>
+                        <p>Projeto em desenvolvimento ativo vinculado ao <strong>Grupo PET-Saúde Transparência</strong>. Desenvolvido em parceria com a UNIPAMPA e as Secretarias de Saúde de Alegrete e Bagé, o sistema visa criar dashboards interativos para análise de indicadores em tempo real.</p>
+                        <p>O acesso é restrito no momento para resguardar as políticas de governança e a segurança de dados de saúde integrados à RNDS.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
