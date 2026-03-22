@@ -3,12 +3,12 @@ export function Skills() {
         {
             title: "Linguagens",
             icon: "fa-solid fa-code",
-            tags: ["Python", "JavaScript", "TypeScript", "SQL", "Java", "PHP"]
+            tags: ["Python", "JavaScript", "TypeScript", "SQL", "Java"]
         },
         {
             title: "Back-end & Arquitetura",
             icon: "fa-solid fa-server",
-            tags: ["Flask", "FastAPI", "APIs REST", "Arq. Hexagonal", "RBAC", "OAuth"]
+            tags: ["Flask", "FastAPI", "APIs REST", "RBAC", "OAuth"]
         },
         {
             title: "Front-end",
@@ -18,7 +18,7 @@ export function Skills() {
         {
             title: "Dados & Engenharia",
             icon: "fa-solid fa-database",
-            tags: ["MySQL", "PostgreSQL (Supabase)", "Pandas (ETL)", "Arq. Medallion", "SQL Analítico"]
+            tags: ["MySQL", "PostgreSQL (Supabase)", "Pandas (ETL)"]
         },
         {
             title: "Qualidade & Testes (QA)",
@@ -28,7 +28,7 @@ export function Skills() {
         {
             title: "Ferramentas & Gestão",
             icon: "fa-solid fa-toolbox",
-            tags: ["Git (GitHub/GitLab)", "Scrum", "Kanban", "Modelagem UML"]
+            tags: ["Git (GitHub/GitLab)", "Scrum", "Kanban"]
         }
     ];
 
