@@ -1,4 +1,4 @@
-// 1. Importe a imagem do PET Saúde no topo do arquivo
+// 1. Importe a imagem do PET Saúde 
 import petSaudeImg from '../imagens/pet_saude.jpg';
 
 export function ProjectDev() {

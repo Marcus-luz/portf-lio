@@ -1,5 +1,5 @@
 // 1. Importe a imagem como uma variável
-import minhaFoto from '../imagens/Minha-FOTO.png';
+import minhaFoto from '../imagens/Minha-foto.png';
 
 export function About() {
     return (

@@ -1,4 +1,4 @@
-// 1. Importe o PDF no topo do ficheiro
+// 1. Importe o PDF ficheiro
 import curriculoPDF from '../assets/CurriculoMarcusViniciusDaLuzAraujoE.pdf';
 
 export function Contact() {
